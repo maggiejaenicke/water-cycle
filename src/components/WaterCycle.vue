@@ -42,47 +42,26 @@
         @touchmove.prevent="handleTouchMove"
         @touchend="handleTouchEnd"
       >
-        <picture
-          v-show="inEnglish"
-        >
-          <source
-            :srcset="imageSrcWebpEnglish"
-            type="image/webp"
-          >
-          <source
-            :srcset="imageSrcEnglish"
-            type="image/png"
-          >
-          <img
-            id="diagramEnglish"
-            :src="imageSrcWebpEnglish"
-            alt="Illustrated diagram of the water cycle showing the major pools and fluxes of water on Earth. The diagram depicts an idealized landscape with bright blue used to highlight key pools and fluxes and how they are connected."
-            class="diagram-image"
-            draggable="false"
-            @load="onEnglishImageLoad"
-          >
-        </picture>
-
-        <picture
-          v-if="loadSpanish"
-          v-show="!inEnglish"
-        >
-          <source
-            :srcset="imageSrcWebpSpanish"
-            type="image/webp"
-          >
-          <source
-            :srcset="imageSrcSpanish"
-            type="image/png"
-          >
-          <img
-            id="diagramSpanish"
-            :src="imageSrcWebpSpanish"
-            alt="Diagrama ilustrado del ciclo del agua que muestra los principales reservorios y flujos de agua en la Tierra. El diagrama representa un paisaje idealizado en el que se usa azul brillante para destacar los reservorios y flujos clave y cómo están conectados."
-            class="diagram-image"
-            draggable="false"
-          >
-        </picture>
+        <WaterCycleLabels
+          :language="selectedLanguage"
+          @term-enter="onTermEnter"
+          @term-leave="onTermLeave"
+        />
+      </div>
+      <div
+        v-if="activeTerm"
+        ref="tooltipRef"
+        class="term-tooltip"
+        :class="{ 'term-tooltip--flipped': tooltipFlipped }"
+        role="tooltip"
+        :style="tooltipStyle"
+      >
+        <p class="term-tooltip__title">
+          {{ activeTerm.title }}
+        </p>
+        <p class="term-tooltip__definition">
+          {{ activeTerm.definition }}
+        </p>
       </div>
       <div
         v-if="activeInfoPanel"
@@ -148,6 +127,7 @@ import DiagramControls from './DiagramControls.vue'
 import DialogBox from './DialogBox.vue'
 import RelatedResources from './RelatedResources.vue'
 import AuthorshipSection from './AuthorshipSection.vue'
+import WaterCycleLabels from './WaterCycleLabels.vue'
 import diagramDescription from '@/assets/text/diagramDescription.json'
 
 // zooom logic
@@ -366,14 +346,8 @@ const SUPPORTED_LANGUAGES = ['en', 'es']
 const DEFAULT_LANGUAGE = 'en'
 const route = useRoute()
 const router = useRouter()
-const loadEnglish = ref(true)
-const loadSpanish = ref(false)
 const inEnglish = ref(true)
 const selectedLanguage = ref('en')
-const imageSrcEnglish = ref(null)
-const imageSrcWebpEnglish = ref(null)
-const imageSrcSpanish = ref(null)
-const imageSrcWebpSpanish = ref(null)
 const currentLanguageDownloadText = ref(null)
 const englishLongDescription = diagramDescription.en
 const spanishLongDescription = diagramDescription.es
@@ -496,11 +470,6 @@ function handleDialogKeydown(element) {
 
 onMounted(() => {
   setLanguage(resolveInitialLanguage())
-
-  imageSrcEnglish.value = 'https://labs.waterdata.usgs.gov/visualizations/images/USGS_WaterCycle_English_ONLINE.png'
-  imageSrcWebpEnglish.value = 'https://labs.waterdata.usgs.gov/visualizations/images/USGS_WaterCycle_English_ONLINE.webp'
-  imageSrcSpanish.value = 'https://labs.waterdata.usgs.gov/visualizations/images/USGS_WaterCycle_Spanish_ONLINE.png'
-  imageSrcWebpSpanish.value = 'https://labs.waterdata.usgs.gov/visualizations/images/USGS_WaterCycle_Spanish_ONLINE.webp'
 })
 
 watch(activeInfoPanel, async (panel) => {
@@ -522,9 +491,52 @@ onBeforeUnmount(() => {
   document.removeEventListener('keydown', handleDialogKeydown, true)
 })
 
-function onEnglishImageLoad() {
-  // Load Spanish diagram in background after English image is ready.
-  loadSpanish.value = true
+// Term hover/tooltip state. Rendered by this component (outside the zoom/pan
+// transform) so tooltip text stays unscaled. The anchor is viewport-space.
+const activeTerm = ref(null)
+const tooltipStyle = ref({})
+const tooltipRef = ref(null)
+// When the label is low in the viewport, open the tooltip upward so it is not
+// clipped by #image-zoomer's overflow or hidden behind the footer.
+const tooltipFlipped = ref(false)
+
+const TOOLTIP_EDGE_PADDING = 8 // px gap from the container edges
+
+function onTermEnter(payload) {
+  activeTerm.value = payload
+  if (!payload.anchor || !zoomContainer.value) return
+
+  const rect = zoomContainer.value.getBoundingClientRect()
+  // Flip to open upward if the label sits in the lower ~45% of the container.
+  const flip = (payload.anchor.bottom - rect.top) > rect.height * 0.55
+  tooltipFlipped.value = flip
+  const anchorY = flip ? payload.anchor.top : payload.anchor.bottom
+
+  // Initial centered position (container-relative).
+  const centerX = payload.anchor.x - rect.left
+  tooltipStyle.value = {
+    left: `${centerX}px`,
+    top: `${anchorY - rect.top}px`
+  }
+
+  // After render, clamp horizontally so the (centered) tooltip stays within
+  // the container on the left/right edges.
+  nextTick(() => {
+    const el = tooltipRef.value
+    if (!el) return
+    const halfWidth = el.offsetWidth / 2
+    const minX = halfWidth + TOOLTIP_EDGE_PADDING
+    const maxX = rect.width - halfWidth - TOOLTIP_EDGE_PADDING
+    const clampedX = Math.min(Math.max(centerX, minX), maxX)
+    tooltipStyle.value = {
+      ...tooltipStyle.value,
+      left: `${clampedX}px`
+    }
+  })
+}
+
+function onTermLeave() {
+  activeTerm.value = null
 }
 
 // normalize an arbitrary language string to a supported code, or null
@@ -619,12 +631,33 @@ function closeInfoPanel() {
   max-width: 100%;
   max-height: 100%;
 }
-.diagram-image {
-  display: block;
-  width: auto;
-  height: auto;
-  max-width: 100%;
-  max-height: 100%;
+.term-tooltip {
+  position: absolute;
+  z-index: 10;
+  max-width: 22rem;
+  margin-top: 0.75rem;
+  padding: 0.6rem 0.8rem;
+  transform: translate(-50%, 0);
+  background: #ffffff;
+  border: 1px solid #949494;
+  border-radius: 0.4rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+  pointer-events: none;
+}
+// Flipped: anchored at the label's top edge, sit fully above it with a gap.
+.term-tooltip--flipped {
+  margin-top: 0;
+  transform: translate(-50%, calc(-100% - 0.75rem));
+}
+.term-tooltip__title {
+  margin: 0 0 0.25rem 0;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.term-tooltip__definition {
+  margin: 0;
+  font-size: 0.95em;
+  line-height: 1.35;
 }
 .info-overlay-backdrop {
   position: absolute;
