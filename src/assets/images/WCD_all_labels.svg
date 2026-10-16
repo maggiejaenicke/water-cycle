@@ -18343,38 +18343,38 @@
       </g>
       <g id="Pools">
         <g id="Pool-sub-group">
-          <text class="st378" transform="translate(139.38 104.77)"><tspan x="0" y="0">over ocean</tspan></text>
-          <text class="st378" transform="translate(1230.8102 171.566)"><tspan x="0" y="0">over land</tspan></text>
-          <text class="st378" transform="translate(142.0737 1323.6816)"><tspan x="0" y="0">deep water zone</tspan></text>
+          <g data-term="atmospheric_moisture_over_ocean" class="wc-label"><text class="st378" transform="translate(139.38 104.77)"><tspan x="0" y="0">over ocean</tspan></text></g>
+          <g data-term="atmospheric_moisture_over_land" class="wc-label"><text class="st378" transform="translate(1230.8102 171.566)"><tspan x="0" y="0">over land</tspan></text></g>
+          <g data-term="ocean_deep_water_zone" class="wc-label"><text class="st378" transform="translate(142.0737 1323.6816)"><tspan x="0" y="0">deep water zone</tspan></text></g>
           <g>
-            <text class="st376" transform="translate(285.2026 1148.7762)"><tspan x="0" y="0">mixed zone</tspan></text>
-            <text class="st379" transform="translate(285.2026 1148.7762)"><tspan x="0" y="0">mixed zone</tspan></text>
+            <g data-term="ocean_mixed_zone" class="wc-label"><text class="st376" transform="translate(285.2026 1148.7762)"><tspan x="0" y="0">mixed zone</tspan></text></g>
+            <g data-term="ocean_mixed_zone" class="wc-label"><text class="st379" transform="translate(285.2026 1148.7762)"><tspan x="0" y="0">mixed zone</tspan></text></g>
           </g>
-          <text class="st378" transform="translate(980.21 477.06)"><tspan x="0" y="0">saline</tspan></text>
-          <text class="st378" transform="translate(735.89 731.61)"><tspan x="0" y="0">fresh</tspan></text>
+          <g data-term="lakes_saline" class="wc-label"><text class="st378" transform="translate(980.21 477.06)"><tspan x="0" y="0">saline</tspan></text></g>
+          <g data-term="lakes_fresh" class="wc-label"><text class="st378" transform="translate(735.89 731.61)"><tspan x="0" y="0">fresh</tspan></text></g>
           <text class="st378" transform="translate(399.01 808.28)"><tspan x="0" y="0">brackish</tspan></text>
           <text class="st378" transform="translate(1154.4426 627.9096)"><tspan x="0" y="0">fresh</tspan></text>
         </g>
         <g id="Pool-group">
-          <text class="st393" transform="translate(2158.4929 1006.9079)"><tspan x="0" y="0">Groundwater</tspan></text>
-          <text class="st393" transform="translate(1268.5123 1135.1111)"><tspan x="0" y="0">Groundwater</tspan></text>
-          <text class="st393" transform="translate(1145.924 145.0368)"><tspan x="0" y="0">Atmospheric moisture</tspan></text>
+          <g data-term="groundwater" class="wc-label"><text class="st393" transform="translate(2158.4929 1006.9079)"><tspan x="0" y="0">Groundwater</tspan></text></g>
+          <g data-term="groundwater" class="wc-label"><text class="st393" transform="translate(1268.5123 1135.1111)"><tspan x="0" y="0">Groundwater</tspan></text></g>
+          <g data-term="atmospheric_moisture_over_land" class="wc-label"><text class="st393" transform="translate(1145.924 145.0368)"><tspan x="0" y="0">Atmospheric moisture</tspan></text></g>
           <g>
-            <text class="st396" transform="translate(301.9631 1122.2492)"><tspan x="0" y="0">Ocean</tspan></text>
-            <text class="st397" transform="translate(301.9631 1122.2492)"><tspan x="0" y="0">Ocean</tspan></text>
+            <g data-term="ocean_mixed_zone" class="wc-label"><text class="st396" transform="translate(301.9631 1122.2492)"><tspan x="0" y="0">Ocean</tspan></text></g>
+            <g data-term="ocean_mixed_zone" class="wc-label"><text class="st397" transform="translate(301.9631 1122.2492)"><tspan x="0" y="0">Ocean</tspan></text></g>
           </g>
-          <text class="st393" transform="translate(2002.3984 478.0249)"><tspan x="0" y="0">Reservoirs</tspan></text>
+          <g data-term="reservoir" class="wc-label"><text class="st393" transform="translate(2002.3984 478.0249)"><tspan x="0" y="0">Reservoirs</tspan></text></g>
           <g>
-            <text class="st393" transform="translate(2469.186 449.0268)"><tspan x="0" y="0">Permafrost</tspan></text>
-            <text class="st397" transform="translate(2469.186 449.0268)"><tspan x="0" y="0">Permafrost</tspan></text>
+            <g data-term="permafrost" class="wc-label"><text class="st393" transform="translate(2469.186 449.0268)"><tspan x="0" y="0">Permafrost</tspan></text></g>
+            <g data-term="permafrost" class="wc-label"><text class="st397" transform="translate(2469.186 449.0268)"><tspan x="0" y="0">Permafrost</tspan></text></g>
           </g>
-          <text class="st393" transform="translate(1665.916 355.5015)"><tspan x="0" y="0">Snowpack</tspan></text>
-          <text class="st393" transform="translate(1413.6737 356.9767)"><tspan x="0" y="0" xml:space="preserve">Ice sheets  </tspan><tspan x="-12.46" y="29">and glaciers</tspan></text>
+          <g data-term="snowpack" class="wc-label"><text class="st393" transform="translate(1665.916 355.5015)"><tspan x="0" y="0">Snowpack</tspan></text></g>
+          <g data-term="ice_sheets_and_glaciers" class="wc-label"><text class="st393" transform="translate(1413.6737 356.9767)"><tspan x="0" y="0" xml:space="preserve">Ice sheets  </tspan><tspan x="-12.46" y="29">and glaciers</tspan></text></g>
           <g>
-            <text class="st396" transform="translate(185.0632 1297.1526)"><tspan x="0" y="0">Ocean</tspan></text>
-            <text class="st397" transform="translate(185.0632 1297.1526)"><tspan x="0" y="0">Ocean</tspan></text>
+            <g data-term="ocean_deep_water_zone" class="wc-label"><text class="st396" transform="translate(185.0632 1297.1526)"><tspan x="0" y="0">Ocean</tspan></text></g>
+            <g data-term="ocean_deep_water_zone" class="wc-label"><text class="st397" transform="translate(185.0632 1297.1526)"><tspan x="0" y="0">Ocean</tspan></text></g>
           </g>
-          <text class="st393" transform="translate(725.67 705.08)"><tspan x="0" y="0">Lakes</tspan></text>
+          <g data-term="lakes_fresh" class="wc-label"><text class="st393" transform="translate(725.67 705.08)"><tspan x="0" y="0">Lakes</tspan></text></g>
           <g>
             <path class="st390" d="M382.3,760.82h4.34l2.63,14.2h.06l3.19-14.2h4.98l3.02,14.2h.06l2.52-14.2h4.14l-4.48,20.22h-4.68l-3.16-14.78h-.06l-3.5,14.78h-4.59l-4.48-20.22Z"/>
             <path class="st390" d="M412.29,774.6c0,1.68.06,4.2,1.79,4.2,1.4,0,1.68-1.34,1.68-2.52h4c-.06,1.54-.56,2.8-1.51,3.67-.92.87-2.32,1.37-4.17,1.37-5.1,0-5.77-3.11-5.77-7.53,0-3.86.56-7.17,5.77-7.17s5.91,3.44,5.77,7.98h-7.56ZM415.9,772.39c0-1.37.06-3.33-1.82-3.33s-1.79,2.13-1.79,3.33h3.61Z"/>
@@ -18385,103 +18385,103 @@
             <path class="st390" d="M476.07,781.04v-1.57h-.06c-.73,1.37-1.82,1.85-3.33,1.85-4.09,0-3.95-4.54-3.95-7.45s-.11-7.25,3.86-7.25c1.43,0,2.41.42,3.22,1.62h.06v-7.42h3.95v20.22h-3.75ZM475.88,773.84c0-2.83.03-4.79-1.6-4.79-1.71,0-1.68,1.96-1.68,4.79,0,3.56.25,5.04,1.68,5.04,1.34,0,1.6-1.48,1.6-5.04Z"/>
             <path class="st390" d="M486.68,776.5c-.03.64,0,1.26.2,1.71.22.45.64.67,1.43.67s1.46-.5,1.46-1.46c0-3-6.94-2.32-6.94-6.83,0-3.05,3.02-3.98,5.57-3.98,2.69,0,5.12,1.29,4.9,4.34h-3.86c0-.98-.11-1.57-.39-1.82-.25-.25-.59-.31-1.01-.31-.87,0-1.34.56-1.34,1.51,0,2.24,6.94,2.13,6.94,6.66,0,2.46-2.02,4.31-5.29,4.31-3.44,0-5.74-.87-5.52-4.82h3.86Z"/>
           </g>
-          <text class="st393" transform="translate(1121.4706 600.5547)"><tspan x="0" y="0">Wetlands</tspan></text>
-          <text class="st393" transform="translate(959.87 823.76)"><tspan x="0" y="0">Rivers</tspan></text>
-          <text class="st393" transform="translate(1593.5013 1072.4382)"><tspan x="0" y="0">Soil moisture</tspan></text>
-          <text class="st393" transform="translate(974.46 450.53)"><tspan x="0" y="0">Lakes</tspan></text>
-          <text class="st393" transform="translate(62.31 78.24)"><tspan x="0" y="0">Atmospheric moisture</tspan></text>
+          <g data-term="wetlands" class="wc-label"><text class="st393" transform="translate(1121.4706 600.5547)"><tspan x="0" y="0">Wetlands</tspan></text></g>
+          <g data-term="river" class="wc-label"><text class="st393" transform="translate(959.87 823.76)"><tspan x="0" y="0">Rivers</tspan></text></g>
+          <g data-term="soil_moisture" class="wc-label"><text class="st393" transform="translate(1593.5013 1072.4382)"><tspan x="0" y="0">Soil moisture</tspan></text></g>
+          <g data-term="lakes_saline" class="wc-label"><text class="st393" transform="translate(974.46 450.53)"><tspan x="0" y="0">Lakes</tspan></text></g>
+          <g data-term="atmospheric_moisture_over_ocean" class="wc-label"><text class="st393" transform="translate(62.31 78.24)"><tspan x="0" y="0">Atmospheric moisture</tspan></text></g>
         </g>
       </g>
       <g id="Fluxes-museo-slab-500-italic">
         <g>
-          <text class="st86" transform="translate(57.45 514)"><tspan x="0" y="0">Precipitation</tspan><tspan x="7.34" y="26">over ocean</tspan></text>
-          <text class="st417" transform="translate(57.45 514)"><tspan x="0" y="0">Precipitation</tspan><tspan x="7.34" y="26">over ocean</tspan></text>
+          <g data-term="precipitation_over_ocean" class="wc-label"><text class="st86" transform="translate(57.45 514)"><tspan x="0" y="0">Precipitation</tspan><tspan x="7.34" y="26">over ocean</tspan></text></g>
+          <g data-term="precipitation_over_ocean" class="wc-label"><text class="st417" transform="translate(57.45 514)"><tspan x="0" y="0">Precipitation</tspan><tspan x="7.34" y="26">over ocean</tspan></text></g>
         </g>
         <g>
           <g class="st560">
-            <text class="st115" transform="translate(175.69 270.87)"><tspan x="0" y="0">Transport of moisture </tspan><tspan x="15.98" y="26">from ocean to land</tspan></text>
+            <g data-term="transport_of_moisture_from_ocean_to_land" class="wc-label"><text class="st115" transform="translate(175.69 270.87)"><tspan x="0" y="0">Transport of moisture </tspan><tspan x="15.98" y="26">from ocean to land</tspan></text></g>
           </g>
-          <text class="st417" transform="translate(175.69 270.87)"><tspan x="0" y="0">Transport of moisture </tspan><tspan x="15.98" y="26">from ocean to land</tspan></text>
+          <g data-term="transport_of_moisture_from_ocean_to_land" class="wc-label"><text class="st417" transform="translate(175.69 270.87)"><tspan x="0" y="0">Transport of moisture </tspan><tspan x="15.98" y="26">from ocean to land</tspan></text></g>
         </g>
         <g>
           <g class="st431">
-            <text class="st98" transform="translate(1841.1035 377.6277)"><tspan x="0" y="0">Snowmelt</tspan></text>
+            <g data-term="snowmelt" class="wc-label"><text class="st98" transform="translate(1841.1035 377.6277)"><tspan x="0" y="0">Snowmelt</tspan></text></g>
           </g>
-          <text class="st417" transform="translate(1841.1035 377.6277)"><tspan x="0" y="0">Snowmelt</tspan></text>
+          <g data-term="snowmelt" class="wc-label"><text class="st417" transform="translate(1841.1035 377.6277)"><tspan x="0" y="0">Snowmelt</tspan></text></g>
         </g>
-        <text class="st417" transform="translate(324.61 984.19)"><tspan x="0" y="0">Ocean</tspan><tspan x="-19.99" y="26">circulation</tspan></text>
+        <g data-term="ocean_circulation" class="wc-label"><text class="st417" transform="translate(324.61 984.19)"><tspan x="0" y="0">Ocean</tspan><tspan x="-19.99" y="26">circulation</tspan></text></g>
         <g>
           <g class="st54">
-            <text class="st120" transform="translate(522.71 706.11)"><tspan x="0" y="0">Domestic</tspan><tspan x="0" y="26">water use</tspan></text>
+            <g data-term="domestic" class="wc-label"><text class="st120" transform="translate(522.71 706.11)"><tspan x="0" y="0">Domestic</tspan><tspan x="0" y="26">water use</tspan></text></g>
           </g>
-          <text class="st417" transform="translate(522.71 706.11)"><tspan x="0" y="0">Domestic</tspan><tspan x="0" y="26">water use</tspan></text>
+          <g data-term="domestic" class="wc-label"><text class="st417" transform="translate(522.71 706.11)"><tspan x="0" y="0">Domestic</tspan><tspan x="0" y="26">water use</tspan></text></g>
         </g>
         <g>
-          <text class="st121" transform="translate(891.76 920.98)"><tspan x="0" y="0">Municipal</tspan><tspan x="0" y="26" xml:space="preserve">   water use</tspan></text>
-          <text class="st417" transform="translate(891.76 920.98)"><tspan x="0" y="0">Municipal</tspan><tspan x="0" y="26" xml:space="preserve">   water use</tspan></text>
+          <g data-term="municipal" class="wc-label"><text class="st121" transform="translate(891.76 920.98)"><tspan x="0" y="0">Municipal</tspan><tspan x="0" y="26" xml:space="preserve">   water use</tspan></text></g>
+          <g data-term="municipal" class="wc-label"><text class="st417" transform="translate(891.76 920.98)"><tspan x="0" y="0">Municipal</tspan><tspan x="0" y="26" xml:space="preserve">   water use</tspan></text></g>
         </g>
         <g>
-          <text class="st89" transform="translate(1237.128 962.3072)"><tspan x="0" y="0">Industrial</tspan><tspan x="0" y="26">water use</tspan></text>
-          <text class="st417" transform="translate(1237.128 962.3072)"><tspan x="0" y="0">Industrial</tspan><tspan x="0" y="26">water use</tspan></text>
+          <g data-term="industrial" class="wc-label"><text class="st89" transform="translate(1237.128 962.3072)"><tspan x="0" y="0">Industrial</tspan><tspan x="0" y="26">water use</tspan></text></g>
+          <g data-term="industrial" class="wc-label"><text class="st417" transform="translate(1237.128 962.3072)"><tspan x="0" y="0">Industrial</tspan><tspan x="0" y="26">water use</tspan></text></g>
         </g>
         <g>
           <g class="st431">
-            <text class="st120" transform="translate(1787.0757 846.6084)"><tspan x="0" y="0">Agricultural</tspan><tspan x="8.66" y="26">water use</tspan></text>
+            <g data-term="agricultural" class="wc-label"><text class="st120" transform="translate(1787.0757 846.6084)"><tspan x="0" y="0">Agricultural</tspan><tspan x="8.66" y="26">water use</tspan></text></g>
           </g>
-          <text class="st417" transform="translate(1787.0757 846.6084)"><tspan x="0" y="0">Agricultural</tspan><tspan x="8.66" y="26">water use</tspan></text>
+          <g data-term="agricultural" class="wc-label"><text class="st417" transform="translate(1787.0757 846.6084)"><tspan x="0" y="0">Agricultural</tspan><tspan x="8.66" y="26">water use</tspan></text></g>
         </g>
         <g>
           <g class="st431">
-            <text class="st120" transform="translate(1504.2787 746.9609)"><tspan x="0" y="0">Grazing</tspan><tspan x="-22.66" y="26">water use</tspan></text>
+            <g data-term="grazing" class="wc-label"><text class="st120" transform="translate(1504.2787 746.9609)"><tspan x="0" y="0">Grazing</tspan><tspan x="-22.66" y="26">water use</tspan></text></g>
           </g>
-          <text class="st417" transform="translate(1504.2787 746.9609)"><tspan x="0" y="0">Grazing</tspan><tspan x="-22.66" y="26">water use</tspan></text>
+          <g data-term="grazing" class="wc-label"><text class="st417" transform="translate(1504.2787 746.9609)"><tspan x="0" y="0">Grazing</tspan><tspan x="-22.66" y="26">water use</tspan></text></g>
         </g>
         <g>
           <g class="st693">
-            <text class="st120" transform="translate(1090.3719 401.6417)"><tspan x="0" y="0">Evapotranspiration</tspan></text>
+            <g data-term="evapotranspiration" class="wc-label"><text class="st120" transform="translate(1090.3719 401.6417)"><tspan x="0" y="0">Evapotranspiration</tspan></text></g>
           </g>
-          <text class="st417" transform="translate(1090.3719 401.6417)"><tspan x="0" y="0">Evapotranspiration</tspan></text>
+          <g data-term="evapotranspiration" class="wc-label"><text class="st417" transform="translate(1090.3719 401.6417)"><tspan x="0" y="0">Evapotranspiration</tspan></text></g>
         </g>
         <g>
           <g class="st693">
-            <text class="st120" transform="translate(1745.8889 582.4119)"><tspan x="0" y="0">Evapotranspiration</tspan></text>
+            <g data-term="evapotranspiration" class="wc-label"><text class="st120" transform="translate(1745.8889 582.4119)"><tspan x="0" y="0">Evapotranspiration</tspan></text></g>
           </g>
-          <text class="st417" transform="translate(1745.8889 582.4119)"><tspan x="0" y="0">Evapotranspiration</tspan></text>
-        </g>
-        <g>
-          <g class="st54">
-            <text class="st118" transform="translate(596.37 552.98)"><tspan x="0" y="0">Runoff</tspan></text>
-          </g>
-          <text class="st417" transform="translate(596.37 552.98)"><tspan x="0" y="0">Runoff</tspan></text>
+          <g data-term="evapotranspiration" class="wc-label"><text class="st417" transform="translate(1745.8889 582.4119)"><tspan x="0" y="0">Evapotranspiration</tspan></text></g>
         </g>
         <g>
           <g class="st54">
-            <text class="st120" transform="translate(755.42 854.08)"><tspan x="0" y="0">Urban</tspan><tspan x="0" y="26">runoff</tspan></text>
+            <g data-term="runoff" class="wc-label"><text class="st118" transform="translate(596.37 552.98)"><tspan x="0" y="0">Runoff</tspan></text></g>
           </g>
-          <text class="st417" transform="translate(755.42 854.08)"><tspan x="0" y="0">Urban</tspan><tspan x="0" y="26">runoff</tspan></text>
+          <g data-term="runoff" class="wc-label"><text class="st417" transform="translate(596.37 552.98)"><tspan x="0" y="0">Runoff</tspan></text></g>
         </g>
-        <text class="st417" transform="translate(85.45 891.1)"><tspan x="0" y="0">Ocean</tspan><tspan x="-25.99" y="26">evaporation</tspan></text>
+        <g>
+          <g class="st54">
+            <g data-term="urban_runoff" class="wc-label"><text class="st120" transform="translate(755.42 854.08)"><tspan x="0" y="0">Urban</tspan><tspan x="0" y="26">runoff</tspan></text></g>
+          </g>
+          <g data-term="urban_runoff" class="wc-label"><text class="st417" transform="translate(755.42 854.08)"><tspan x="0" y="0">Urban</tspan><tspan x="0" y="26">runoff</tspan></text></g>
+        </g>
+        <g data-term="ocean_evaporation" class="wc-label"><text class="st417" transform="translate(85.45 891.1)"><tspan x="0" y="0">Ocean</tspan><tspan x="-25.99" y="26">evaporation</tspan></text></g>
         <g>
           <g class="st693">
-            <text class="st116" transform="translate(970.4344 1028.2071)"><tspan x="0" y="0">Streamflow</tspan><tspan x="0" y="26">to ocean</tspan></text>
+            <g data-term="streamflow_to_ocean" class="wc-label"><text class="st116" transform="translate(970.4344 1028.2071)"><tspan x="0" y="0">Streamflow</tspan><tspan x="0" y="26">to ocean</tspan></text></g>
           </g>
-          <text class="st417" transform="translate(970.4344 1028.2071)"><tspan x="0" y="0">Streamflow</tspan><tspan x="0" y="26">to ocean</tspan></text>
+          <g data-term="streamflow_to_ocean" class="wc-label"><text class="st417" transform="translate(970.4344 1028.2071)"><tspan x="0" y="0">Streamflow</tspan><tspan x="0" y="26">to ocean</tspan></text></g>
         </g>
         <g>
           <g class="st693">
-            <text class="st120" transform="translate(784.59 441.18)"><tspan x="0" y="0">Streamflow to </tspan><tspan x="4.02" y="26">closed basins</tspan></text>
+            <g data-term="streamflow_to_closed_basins" class="wc-label"><text class="st120" transform="translate(784.59 441.18)"><tspan x="0" y="0">Streamflow to </tspan><tspan x="4.02" y="26">closed basins</tspan></text></g>
           </g>
-          <text class="st417" transform="translate(784.59 441.18)"><tspan x="0" y="0">Streamflow to </tspan><tspan x="4.02" y="26">closed basins</tspan></text>
+          <g data-term="streamflow_to_closed_basins" class="wc-label"><text class="st417" transform="translate(784.59 441.18)"><tspan x="0" y="0">Streamflow to </tspan><tspan x="4.02" y="26">closed basins</tspan></text></g>
         </g>
         <g>
-          <text class="st120" transform="translate(2309.8214 544.7572)"><tspan x="0" y="0">Groundwater</tspan><tspan x="17.35" y="26" xml:space="preserve">recharge    </tspan></text>
-          <text class="st417" transform="translate(2309.8214 544.7572)"><tspan x="0" y="0">Groundwater</tspan><tspan x="17.35" y="26">recharge</tspan><tspan class="st391" x="105.34" y="26" xml:space="preserve">    </tspan></text>
+          <g data-term="groundwater_recharge" class="wc-label"><text class="st120" transform="translate(2309.8214 544.7572)"><tspan x="0" y="0">Groundwater</tspan><tspan x="17.35" y="26" xml:space="preserve">recharge    </tspan></text></g>
+          <g data-term="groundwater_recharge" class="wc-label"><text class="st417" transform="translate(2309.8214 544.7572)"><tspan x="0" y="0">Groundwater</tspan><tspan x="17.35" y="26">recharge</tspan><tspan class="st391" x="105.34" y="26" xml:space="preserve">    </tspan></text></g>
         </g>
         <g>
           <g class="st431">
-            <text class="st98" transform="translate(475.25 332.64)"><tspan x="0" y="0">Precipitation over land</tspan></text>
+            <g data-term="precipitation_over_land" class="wc-label"><text class="st98" transform="translate(475.25 332.64)"><tspan x="0" y="0">Precipitation over land</tspan></text></g>
           </g>
-          <text class="st417" transform="translate(475.25 332.64)"><tspan x="0" y="0">Precipitation over land</tspan></text>
+          <g data-term="precipitation_over_land" class="wc-label"><text class="st417" transform="translate(475.25 332.64)"><tspan x="0" y="0">Precipitation over land</tspan></text></g>
         </g>
         <g>
           <g class="st431">
@@ -18535,9 +18535,9 @@
         </g>
         <g>
           <g class="st693">
-            <text class="st117" transform="translate(504.4112 1324.6252)"><tspan x="0" y="0">Groundwater </tspan><tspan x="0" y="26" xml:space="preserve">    discharge to ocean</tspan></text>
+            <g data-term="groundwater_discharge_to_ocean" class="wc-label"><text class="st117" transform="translate(504.4112 1324.6252)"><tspan x="0" y="0">Groundwater </tspan><tspan x="0" y="26" xml:space="preserve">    discharge to ocean</tspan></text></g>
           </g>
-          <text class="st417" transform="translate(504.4112 1324.6252)"><tspan x="0" y="0">Groundwater </tspan><tspan x="0" y="26" xml:space="preserve">    discharge to ocean</tspan></text>
+          <g data-term="groundwater_discharge_to_ocean" class="wc-label"><text class="st417" transform="translate(504.4112 1324.6252)"><tspan x="0" y="0">Groundwater </tspan><tspan x="0" y="26" xml:space="preserve">    discharge to ocean</tspan></text></g>
         </g>
       </g>
     </g>
