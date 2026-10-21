@@ -3,6 +3,7 @@
     "label": "precipitation",
     "qualifier": "over land",
     "type": "flux",
+    "advancedOnly": false,
     "imageLink": "",
     "notes": "",
     "definitions": {
@@ -20,6 +21,7 @@
     "label": "precipitation",
     "qualifier": "over ocean",
     "type": "flux",
+    "advancedOnly": false,
     "imageLink": "",
     "notes": "",
     "definitions": {
@@ -37,6 +39,7 @@
     "label": "ocean",
     "qualifier": "evaporation",
     "type": "flux",
+    "advancedOnly": false,
     "imageLink": "",
     "notes": "",
     "definitions": {
@@ -54,6 +57,7 @@
     "label": "ocean",
     "qualifier": "circulation",
     "type": "flux",
+    "advancedOnly": false,
     "imageLink": "",
     "notes": "",
     "definitions": {
@@ -71,6 +75,7 @@
     "label": "runoff",
     "qualifier": "",
     "type": "flux",
+    "advancedOnly": false,
     "imageLink": "",
     "notes": "image: not in glossary",
     "definitions": {
@@ -88,6 +93,7 @@
     "label": "urban runoff",
     "qualifier": "",
     "type": "flux",
+    "advancedOnly": true,
     "imageLink": "",
     "notes": "image: no tin glossary",
     "definitions": {
@@ -105,6 +111,7 @@
     "label": "groundwater",
     "qualifier": "recharge",
     "type": "flux",
+    "advancedOnly": false,
     "imageLink": "",
     "notes": "",
     "definitions": {
@@ -122,6 +129,7 @@
     "label": "groundwater",
     "qualifier": "discharge to ocean",
     "type": "flux",
+    "advancedOnly": false,
     "imageLink": "",
     "notes": "",
     "definitions": {
@@ -139,6 +147,7 @@
     "label": "snowmelt",
     "qualifier": "",
     "type": "flux",
+    "advancedOnly": true,
     "imageLink": "",
     "notes": "",
     "definitions": {
@@ -156,6 +165,7 @@
     "label": "evapotranspiration",
     "qualifier": "",
     "type": "flux",
+    "advancedOnly": false,
     "imageLink": "",
     "notes": "",
     "definitions": {
@@ -173,6 +183,7 @@
     "label": "streamflow",
     "qualifier": "to ocean",
     "type": "flux",
+    "advancedOnly": true,
     "imageLink": "",
     "notes": "",
     "definitions": {
@@ -190,6 +201,7 @@
     "label": "streamflow",
     "qualifier": "to closed basins",
     "type": "flux",
+    "advancedOnly": true,
     "imageLink": "",
     "notes": "",
     "definitions": {
@@ -205,8 +217,9 @@
   },
   "industrial": {
     "label": "industrial",
-    "qualifier": "",
+    "qualifier": "water use",
     "type": "flux",
+    "advancedOnly": true,
     "imageLink": "",
     "notes": "",
     "definitions": {
@@ -222,8 +235,9 @@
   },
   "municipal": {
     "label": "municipal",
-    "qualifier": "",
+    "qualifier": "water use",
     "type": "flux",
+    "advancedOnly": true,
     "imageLink": "",
     "notes": "",
     "definitions": {
@@ -239,8 +253,9 @@
   },
   "domestic": {
     "label": "domestic",
-    "qualifier": "",
+    "qualifier": "water use",
     "type": "flux",
+    "advancedOnly": true,
     "imageLink": "",
     "notes": "",
     "definitions": {
@@ -256,8 +271,9 @@
   },
   "agricultural": {
     "label": "agricultural",
-    "qualifier": "",
+    "qualifier": "water use",
     "type": "flux",
+    "advancedOnly": true,
     "imageLink": "",
     "notes": "",
     "definitions": {
@@ -273,8 +289,9 @@
   },
   "grazing": {
     "label": "grazing",
-    "qualifier": "",
+    "qualifier": "water use",
     "type": "flux",
+    "advancedOnly": true,
     "imageLink": "",
     "notes": "",
     "definitions": {
@@ -292,6 +309,7 @@
     "label": "lakes",
     "qualifier": "fresh",
     "type": "pool",
+    "advancedOnly": false,
     "imageLink": "",
     "notes": "",
     "definitions": {
@@ -309,6 +327,7 @@
     "label": "lakes",
     "qualifier": "saline",
     "type": "",
+    "advancedOnly": true,
     "imageLink": "",
     "notes": "",
     "definitions": {
@@ -322,10 +341,11 @@
       }
     }
   },
-  "wetlands": {
+  "wetlands_fresh": {
     "label": "wetlands",
-    "qualifier": "",
+    "qualifier": "fresh",
     "type": "pool",
+    "advancedOnly": false,
     "imageLink": "",
     "notes": "",
     "definitions": {
@@ -339,10 +359,29 @@
       }
     }
   },
+  "wetlands_brackish": {
+    "label": "wetlands",
+    "qualifier": "brackish",
+    "type": "pool",
+    "advancedOnly": true,
+    "imageLink": "",
+    "notes": "",
+    "definitions": {
+      "en": {
+        "beginner": "Wetlands where freshwater and saltwater mix together.",
+        "advanced": "Brackish wetlands are areas where land is covered or saturated with water that is a mix of fresh water and saltwater. The water is saltier than freshwater but not as salty as ocean water. These wetlands are often found near coasts, estuaries, and river mouths."
+      },
+      "es": {
+        "beginner": "",
+        "advanced": ""
+      }
+    }
+  },
   "river": {
     "label": "river",
     "qualifier": "",
     "type": "pool",
+    "advancedOnly": false,
     "imageLink": "",
     "notes": "",
     "definitions": {
@@ -360,6 +399,7 @@
     "label": "groundwater",
     "qualifier": "",
     "type": "pool",
+    "advancedOnly": false,
     "imageLink": "",
     "notes": "",
     "definitions": {
@@ -377,6 +417,7 @@
     "label": "permafrost",
     "qualifier": "",
     "type": "pool",
+    "advancedOnly": true,
     "imageLink": "",
     "notes": "",
     "definitions": {
@@ -394,6 +435,7 @@
     "label": "ice sheets and glaciers",
     "qualifier": "",
     "type": "pool",
+    "advancedOnly": true,
     "imageLink": "",
     "notes": "",
     "definitions": {
@@ -411,6 +453,7 @@
     "label": "snowpack",
     "qualifier": "",
     "type": "pool",
+    "advancedOnly": false,
     "imageLink": "",
     "notes": "",
     "definitions": {
@@ -428,6 +471,7 @@
     "label": "atmospheric moisture",
     "qualifier": "over ocean",
     "type": "pool",
+    "advancedOnly": false,
     "imageLink": "",
     "notes": "",
     "definitions": {
@@ -445,6 +489,7 @@
     "label": "atmospheric moisture",
     "qualifier": "over land",
     "type": "pool",
+    "advancedOnly": false,
     "imageLink": "",
     "notes": "",
     "definitions": {
@@ -462,6 +507,7 @@
     "label": "ocean",
     "qualifier": "mixed zone",
     "type": "pool",
+    "advancedOnly": false,
     "imageLink": "",
     "notes": "",
     "definitions": {
@@ -479,6 +525,7 @@
     "label": "ocean",
     "qualifier": "deep water zone",
     "type": "pool",
+    "advancedOnly": false,
     "imageLink": "",
     "notes": "",
     "definitions": {
@@ -496,6 +543,7 @@
     "label": "reservoir",
     "qualifier": "",
     "type": "pool",
+    "advancedOnly": false,
     "imageLink": "",
     "notes": "",
     "definitions": {
@@ -513,6 +561,7 @@
     "label": "soil moisture",
     "qualifier": "",
     "type": "pool",
+    "advancedOnly": false,
     "imageLink": "",
     "notes": "",
     "definitions": {
@@ -526,146 +575,11 @@
       }
     }
   },
-  "biological_water": {
-    "label": "Biological Water",
-    "qualifier": "",
-    "type": "",
-    "imageLink": "",
-    "notes": "",
-    "definitions": {
-      "en": {
-        "beginner": "",
-        "advanced": "Water stored within living things like plants, insects, and animals (including humans). Biological water is a water cycle pool."
-      },
-      "es": {
-        "beginner": "",
-        "advanced": ""
-      }
-    }
-  },
-  "condensation": {
-    "label": "condensation",
-    "qualifier": "",
-    "type": "flux",
-    "imageLink": "",
-    "notes": "",
-    "definitions": {
-      "en": {
-        "beginner": "",
-        "advanced": "The process that changes gaseous water (water vapor) to liquid water. Condensation is a water phase change."
-      },
-      "es": {
-        "beginner": "",
-        "advanced": ""
-      }
-    }
-  },
-  "evaporation": {
-    "label": "evaporation",
-    "qualifier": "",
-    "type": "flux",
-    "imageLink": "",
-    "notes": "",
-    "definitions": {
-      "en": {
-        "beginner": "",
-        "advanced": "The process that changes liquid water to a gas (water vapor). Evaporation is driven by heat. Evaporation is a water cycle flux."
-      },
-      "es": {
-        "beginner": "",
-        "advanced": ""
-      }
-    }
-  },
-  "flux": {
-    "label": "flux",
-    "qualifier": "",
-    "type": "",
-    "imageLink": "",
-    "notes": "",
-    "definitions": {
-      "en": {
-        "beginner": "",
-        "advanced": "A flux is a process that moves water between pools, like evaporation, precipitation, discharge, recharge, or human use."
-      },
-      "es": {
-        "beginner": "",
-        "advanced": ""
-      }
-    }
-  },
-  "forestry_water_use": {
-    "label": "forestry water use",
-    "qualifier": "",
-    "type": "flux",
-    "imageLink": "",
-    "notes": "",
-    "definitions": {
-      "en": {
-        "beginner": "",
-        "advanced": "Water that is used by the forestry industry. In forestry, water is used to irrigate seedlings and grow trees. Water is also used to put out wildfires that burn forests. Water is also used indirectly as trees obtain water from soil moisture, use water during photosynthesis, and store water in their tissues. Forestry activities such as logging, constructing roads, and transporting felled trees can destabilize hillslopes, increasing erosion and sedimentation transport to streams. Forestry water use is a water cycle flux."
-      },
-      "es": {
-        "beginner": "",
-        "advanced": ""
-      }
-    }
-  },
-  "pool": {
-    "label": "pool",
-    "qualifier": "",
-    "type": "",
-    "imageLink": "",
-    "notes": "",
-    "definitions": {
-      "en": {
-        "beginner": "",
-        "advanced": "A pool is place where water is stored, like the ocean, ice sheets, groundwater, rivers, lakes, and snowpack."
-      },
-      "es": {
-        "beginner": "",
-        "advanced": ""
-      }
-    }
-  },
-  "sublimation": {
-    "label": "sublimation",
-    "qualifier": "",
-    "type": "flux",
-    "imageLink": "",
-    "notes": "",
-    "definitions": {
-      "en": {
-        "beginner": "",
-        "advanced": "The process by which snow and ice transform into gaseous water (water vapor) without first melting into water. Sublimation is a water cycle flux."
-      },
-      "es": {
-        "beginner": "",
-        "advanced": ""
-      }
-    }
-  },
-  "transpiration": {
-    "label": "transpiration",
-    "qualifier": "",
-    "type": "flux",
-    "imageLink": "",
-    "notes": "",
-    "definitions": {
-      "en": {
-        "beginner": "",
-        "advanced": "The release of gaseous water (water vapor) from plant leaves. Transpiration is a water cycle flux."
-      },
-      "es": {
-        "beginner": "",
-        "advanced": ""
-      }
-    }
-  },
   "transport_of_moisture_from_ocean_to_land": {
     "label": "Transport of moisture from ocean to land",
     "qualifier": "",
     "type": "flux",
+    "advancedOnly": false,
     "imageLink": "",
     "notes": "",
     "definitions": {

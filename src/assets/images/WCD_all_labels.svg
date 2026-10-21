@@ -18352,8 +18352,8 @@
           </g>
           <g data-term="lakes_saline" class="wc-label"><text class="st378" transform="translate(980.21 477.06)"><tspan x="0" y="0">saline</tspan></text></g>
           <g data-term="lakes_fresh" class="wc-label"><text class="st378" transform="translate(735.89 731.61)"><tspan x="0" y="0">fresh</tspan></text></g>
-          <text class="st378" transform="translate(399.01 808.28)"><tspan x="0" y="0">brackish</tspan></text>
-          <text class="st378" transform="translate(1154.4426 627.9096)"><tspan x="0" y="0">fresh</tspan></text>
+          <g data-term="wetlands_brackish" class="wc-label"><text class="st378" transform="translate(399.01 808.28)"><tspan x="0" y="0">brackish</tspan></text></g>
+          <g data-term="wetlands_fresh" class="wc-label"><text class="st378" transform="translate(1154.4426 627.9096)"><tspan x="0" y="0">fresh</tspan></text></g>
         </g>
         <g id="Pool-group">
           <g data-term="groundwater" class="wc-label"><text class="st393" transform="translate(2158.4929 1006.9079)"><tspan x="0" y="0">Groundwater</tspan></text></g>
@@ -18375,7 +18375,7 @@
             <g data-term="ocean_deep_water_zone" class="wc-label"><text class="st397" transform="translate(185.0632 1297.1526)"><tspan x="0" y="0">Ocean</tspan></text></g>
           </g>
           <g data-term="lakes_fresh" class="wc-label"><text class="st393" transform="translate(725.67 705.08)"><tspan x="0" y="0">Lakes</tspan></text></g>
-          <g>
+          <g data-term="wetlands_brackish" class="wc-label">
             <path class="st390" d="M382.3,760.82h4.34l2.63,14.2h.06l3.19-14.2h4.98l3.02,14.2h.06l2.52-14.2h4.14l-4.48,20.22h-4.68l-3.16-14.78h-.06l-3.5,14.78h-4.59l-4.48-20.22Z"/>
             <path class="st390" d="M412.29,774.6c0,1.68.06,4.2,1.79,4.2,1.4,0,1.68-1.34,1.68-2.52h4c-.06,1.54-.56,2.8-1.51,3.67-.92.87-2.32,1.37-4.17,1.37-5.1,0-5.77-3.11-5.77-7.53,0-3.86.56-7.17,5.77-7.17s5.91,3.44,5.77,7.98h-7.56ZM415.9,772.39c0-1.37.06-3.33-1.82-3.33s-1.79,2.13-1.79,3.33h3.61Z"/>
             <path class="st390" d="M421.61,766.9h1.6v-2.24l3.95-1.76v4h2.04v2.44h-2.04v7.56c0,1.06-.03,1.76,1.26,1.76.25,0,.5,0,.7-.06v2.44c-.53.06-1.09.14-2.04.14-3.42,0-3.86-2.27-3.86-3.14v-8.71h-1.6v-2.44Z"/>
@@ -18385,7 +18385,7 @@
             <path class="st390" d="M476.07,781.04v-1.57h-.06c-.73,1.37-1.82,1.85-3.33,1.85-4.09,0-3.95-4.54-3.95-7.45s-.11-7.25,3.86-7.25c1.43,0,2.41.42,3.22,1.62h.06v-7.42h3.95v20.22h-3.75ZM475.88,773.84c0-2.83.03-4.79-1.6-4.79-1.71,0-1.68,1.96-1.68,4.79,0,3.56.25,5.04,1.68,5.04,1.34,0,1.6-1.48,1.6-5.04Z"/>
             <path class="st390" d="M486.68,776.5c-.03.64,0,1.26.2,1.71.22.45.64.67,1.43.67s1.46-.5,1.46-1.46c0-3-6.94-2.32-6.94-6.83,0-3.05,3.02-3.98,5.57-3.98,2.69,0,5.12,1.29,4.9,4.34h-3.86c0-.98-.11-1.57-.39-1.82-.25-.25-.59-.31-1.01-.31-.87,0-1.34.56-1.34,1.51,0,2.24,6.94,2.13,6.94,6.66,0,2.46-2.02,4.31-5.29,4.31-3.44,0-5.74-.87-5.52-4.82h3.86Z"/>
           </g>
-          <g data-term="wetlands" class="wc-label"><text class="st393" transform="translate(1121.4706 600.5547)"><tspan x="0" y="0">Wetlands</tspan></text></g>
+          <g data-term="wetlands_fresh" class="wc-label"><text class="st393" transform="translate(1121.4706 600.5547)"><tspan x="0" y="0">Wetlands</tspan></text></g>
           <g data-term="river" class="wc-label"><text class="st393" transform="translate(959.87 823.76)"><tspan x="0" y="0">Rivers</tspan></text></g>
           <g data-term="soil_moisture" class="wc-label"><text class="st393" transform="translate(1593.5013 1072.4382)"><tspan x="0" y="0">Soil moisture</tspan></text></g>
           <g data-term="lakes_saline" class="wc-label"><text class="st393" transform="translate(974.46 450.53)"><tspan x="0" y="0">Lakes</tspan></text></g>

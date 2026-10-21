@@ -57,7 +57,7 @@
         :style="tooltipStyle"
       >
         <p class="term-tooltip__title">
-          {{ activeTerm.title }}
+          {{ [activeTerm.label, activeTerm.qualifier].filter(Boolean).join(' ') }}
         </p>
         <p class="term-tooltip__definition">
           {{ activeTerm.definition }}
@@ -651,12 +651,12 @@ function closeInfoPanel() {
 }
 .term-tooltip__title {
   margin: 0 0 0.25rem 0;
+  line-height: 1.2;
   font-weight: 700;
-  text-transform: capitalize;
 }
 .term-tooltip__definition {
   margin: 0;
-  font-size: 0.95em;
+  font-size: 0.875em;
   line-height: 1.35;
 }
 .info-overlay-backdrop {
